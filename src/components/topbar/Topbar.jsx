@@ -10,11 +10,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="left">
           <a href="#intro" className="logo">
             {" "}
-            Akuma.
+            Jackal.
           </a>
           <div className="itemContainer">
             <Person className="icon" />
-            <span>252-722-5369</span>
+            <span>(252)-722-5369</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />

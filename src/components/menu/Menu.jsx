@@ -3,35 +3,32 @@ import './menu.scss'
 export default function Menu({ menuOpen, setMenuOpen}) {
 
     return (
-
-        <div className={"menu "+(menuOpen &&"active")}>
-        
+      <div className={"menu " + (menuOpen && "active")}>
         <ul>
-            <li>
-                <a href="#intro">Home</a>
-            </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#intro">Home</a>
+          </li>
         </ul>
         <ul>
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#portfolio">Portfolio</a>
+          </li>
         </ul>
         <ul>
-            <li>
-                <a href="#projects">Project</a>
-            </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#projects">Projects</a>
+          </li>
         </ul>
         <ul>
-            <li>
-                <a href="#testimonials">Testimonials</a>
-            </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#testimonials">Testimonials</a>
+          </li>
         </ul>
         <ul>
-            <li>
-                <a href="#Contact">Contact</a>
-            </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-
-    </div>
-  );
+      </div>
+    );
 }

@@ -1,11 +1,11 @@
 import './projects.scss';
 
-export default function Work() {
+export default function Projects() {
     
     return (
     
-        <div className='works' id='works'>
-            work
+        <div className='projects' id='projects'>
+            Projects
         </div>
      )
 }
