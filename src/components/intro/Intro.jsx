@@ -13,7 +13,11 @@ export default function Intro() {
           backDelay: 1500,
           backSpeed: 60,
         //   showCursor: true,
+<<<<<<< HEAD
           strings: [ " Junior Full Stack ", " Junior Software "],
+=======
+          strings: [" Junior Full Stack ", "Junior Software "],
+>>>>>>> b5e1a74e4021b4c4ed14be2eb27f353b83d17652
         });
     }, []);
 
