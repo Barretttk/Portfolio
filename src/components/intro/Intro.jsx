@@ -31,11 +31,11 @@ export default function Intro() {
           <h3>
             {" "}
             Freelance 
-            <span ref={textRef}></span>
+            <span ref={textRef}></span>    
             Engineer
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#about">
           <img src="images/down.png" alt="" />
         </a>
       </div>
