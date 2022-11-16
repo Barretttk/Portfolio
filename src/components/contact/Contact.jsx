@@ -12,25 +12,26 @@ const Contact = () => {
     const formRef = useRef();
     const [done,setDone] = useState(false)
 
-    const handleSubmit = (e) => 
-        e.preventDefault();
+   const handleSubmit = (e) => {
+     e.preventDefault();
+     emailjs
+       .sendForm(
+         "service_jocgxvl",
+         "template_eodv29d",
+         formRef.current,
+         "Vh1yltVIyjmfxE6Ua"
+       )
+       .then(
+         (result) => {
+           console.log(result.text);
+           setDone(true);
+         },
+         (error) => {
+           console.log(error.text);
+         }
+       );
+   };
 
-    // emailjs
-    //   .sendRef(
-    //     "service_jocgxvl",
-    //     "Ytemplate_eodv29d",
-    //     formRef.current,
-    //     "Vh1yltVIyjmfxE6Ua"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       setDone(true)
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
 
   return (
     <div className="contact" id="contact">
