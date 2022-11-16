@@ -1,9 +1,36 @@
 import './contact.scss'
-import {PhoneAndroid, Mail} from "@material-ui/icons";
-import { useRef } from 'react';
+// import {PhoneAndroid, Mail} from "@material-ui/icons";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import React from 'react'
+import { useState } from 'react';
 
-export default function Contact() {
-    const formRef = useRef
+
+
+const Contact = () => {
+
+    const formRef = useRef();
+    const [done,setDone] = useState(false)
+
+    const handleSubmit = (e) => 
+        e.preventDefault();
+
+    // emailjs
+    //   .sendRef(
+    //     "service_jocgxvl",
+    //     "Ytemplate_eodv29d",
+    //     formRef.current,
+    //     "Vh1yltVIyjmfxE6Ua"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setDone(true)
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
 
   return (
     <div className="contact" id="contact">
@@ -55,9 +82,11 @@ export default function Contact() {
               rows="10"
             />
             <button>Submit</button>
+            {done && "Thank you I will get back with you shortly."}
           </form>
         </div>
       </div>
     </div>
   );
-}
+};
+export default Contact
