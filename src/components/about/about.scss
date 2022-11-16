@@ -59,15 +59,23 @@
     font-weight: 300;
 }
 
-.cert-title{
+.cert{
     margin-top: 50px;
     display: flex;
     align-items: center;
+}
+
+.cert-title{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .cert-text{
     margin-left: 50px;
     width: 70%;
 }
+
+
 
 

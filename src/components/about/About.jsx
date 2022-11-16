@@ -24,7 +24,7 @@ export default function About() {
         <div className="about-desc">
             Something about me
         </div>
-        <div className="cert-title">
+        <div className="cert">
           <img src="images/Completed.jpg" alt="" className="cert-img" />
           <div className="cert-text">
             <h4 className="cert-title">CODING DOJO GRADUATE 2022</h4>
