@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img src="images/location.png" alt="" className="c-icon" />
-              Southern Virginia Area
+              South Eastern Virginia (757)
             </div>
           </div>
         </div>
