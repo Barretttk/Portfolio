@@ -10,7 +10,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="left">
           <a href="#intro" className="logo">
             {" "}
-            Jackal.
+            Jackel.
           </a>
           <div className="itemContainer">
             <Person className="icon" />
@@ -26,6 +26,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
+            <span className="line4"></span>
           </div>
         </div>
       </div>
